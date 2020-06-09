@@ -1,6 +1,9 @@
 /*  Navbar styles */
 .navbar-wrapper {
   background-color: var(--dark-color);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 .fa-gamepad {
   margin-right: 4px;
@@ -9,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin: 0 auto;
 }
 .navbar-main {
   margin-right: auto;
