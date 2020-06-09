@@ -4,7 +4,7 @@ var portfolioWrapper = document.getElementById('portfolioWrapper');
 var iconsDiv = document.getElementById('icons');
 
 // miliseconds delay
-var miliseconds = 200;
+var miliseconds = 1500;
 
 addIcons(4, miliseconds);
 
