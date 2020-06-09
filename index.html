@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
   <link rel="stylesheet" href="css/loading-screen.css" type="text/css" />
+  <link rel="stylesheet" href="css/menu.css" type="text/css" />
   <script src="https://kit.fontawesome.com/b06fd2064d.js" crossorigin="anonymous"></script>
   <title>Kristian Bakov</title>
 </head>
@@ -20,9 +21,21 @@
     <div class="navbar-wrapper">
       <div class="container navbar">
         <h1 class="navbar-main"><i class="fas fa-gamepad"></i>KRISTIAN</h1>
-        <a class='link-item' href="#"><h2>Projects</h2></a>
-        <a class='link-item' href="#"><h2>About</h2></a>
-        <a class='link-item' href="#"><h2>Contact</h2></a>
+        <div class="nav-links-desktop">
+          <a class='link-item' href="#"><h2>Projects</h2></a>
+          <a class='link-item' href="#"><h2>About</h2></a>
+          <a class='link-item' href="#"><h2>Contact</h2></a>
+        </div>
+        <div class="nav-links-mobile">
+          <a class='link-item' href="#"><h2>Projects</h2></a>
+          <a class='link-item' href="#"><h2>About</h2></a>
+          <a class='link-item' href="#"><h2>Contact</h2></a>
+        </div>
+        <div class="hamburger-box">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
       </div>
     </div>
   
@@ -41,42 +54,41 @@
         <div class="projects">
 
           <div class="project-item">
-            <h3 class="common-h3">Project 1</h3>
+            <img src="assets/images/aigeneratedtexture.png" alt="">
           </div>
 
           <div class="project-item">
-            <h3 class="common-h3">Project 2</h3>
+            <img src="assets/images/ATPlatforer_mMIOAxZ3xO.png" alt="">
           </div>
 
           <div class="project-item">
-            <h3 class="common-h3">Project 3</h3>
+            <img src="assets/images/d46560aa-67b5-4088-bafc-55ae4f654341_rw_1920-2.png" alt="">
           </div>
 
           <div class="project-item">
-            <h3 class="common-h3">Project 4</h3>
+            <img class="no-cover" src="assets/images/Overwolf_D3LdCwNx5o-2.png" alt="">
           </div>
 
           <div class="project-item">
-            <h3 class="common-h3">Project 5</h3>
+            <img src="assets/images/showcase.png" alt="">
           </div>
 
           <div class="project-item">
-            <h3 class="common-h3">Project 6</h3>
-          </div>
-
-          <div class="project-item">
-            <h3 class="common-h3">Project 7</h3>
-          </div>
-
-          <div class="project-item">
-            <h3 class="common-h3">Project 8</h3>
+            <img src="assets/images/project.png" alt="">
           </div>
 
         </div>
       </div>
     </div>
+
+    <div class="about-me-wrapper">
+      <div class="container about-me-main">
+        <h2 class="common-h2">About Me</h2>
+      </div>
+    </div>
   </div>
   
   <script src="js/script.js"></script>
+  <script src="js/hamburger.js"></script>
 </body>
 </html>

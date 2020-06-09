@@ -4,12 +4,12 @@ var portfolioWrapper = document.getElementById('portfolioWrapper');
 var iconsDiv = document.getElementById('icons');
 
 // miliseconds delay
-var miliseconds = 2500;
+var miliseconds = 250;
 
-addGhosts(4, miliseconds);
+addIcons(4, miliseconds);
 
 // Add ghosts sequentially on loading screen
-function addGhosts(length, ms) {
+function addIcons(length, ms) {
   var icons = [
     'fas fa-gamepad',
     'fas fa-ghost',

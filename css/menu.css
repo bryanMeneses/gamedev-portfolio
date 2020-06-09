@@ -1,0 +1,178 @@
+/*  Navbar styles */
+.navbar-wrapper {
+  background-color: var(--dark-color);
+}
+.fa-gamepad {
+  margin-right: 4px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar-main {
+  margin-right: auto;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.nav-links-desktop {
+  display: flex;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.nav-links-desktop .link-item {
+  padding: 24px;
+}
+
+.link-item {
+  transition: all var(--fast-speed) ease-in;
+}
+
+.link-item h2 {
+  transition: all var(--fast-speed) ease-in;
+  font-size: 20px;
+}
+
+.link-item:hover {
+  background-color: #0c2d4b;
+
+}
+
+.link-item:hover h2 {
+  color: var(--secondary-color) !important;
+}
+
+.hamburger-box {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: all var(--fast-speed) ease-in-out;
+  position: relative;
+}
+
+.line-1, .line-2, .line-3 {
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  margin: 2.5px auto;
+  background-color: var(--white-color);
+  transition: all var(--fast-speed) ease-in;
+  left: 11.25px;
+}
+
+.line-1 {
+  top: 8px;
+}
+
+.line-2 {
+  top: 16px;
+} 
+.line-3 {
+  top: 24px;
+}
+
+@media (max-width: 962px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hamburger-box {
+    display: flex;
+  }
+
+  .nav-links-desktop {
+    display: none;
+  }
+  
+  .nav-links-mobile {
+    position: absolute;
+    visibility: hidden;
+    transform: translateX(100%);
+    background-color: var(--dark-color);
+    top: 77px;
+    right: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    transition: all var(--fast-speed) ease-in-out;
+  }
+
+  .nav-links-mobile .link-item {
+    padding: 24px 100%;
+    pointer-events: none;
+  }
+
+  .link-item h2 {
+    opacity: 0;
+  }
+
+  /* For moible nav */
+  .nav-links-mobile.nav-active {
+    visibility: visible;
+    transform: translateX(0)
+  }
+
+  .nav-links-mobile.nav-active .link-item {
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: initial;
+  }
+
+  .nav-links-mobile.nav-active .link-item h2  {
+    opacity: 0;
+  }
+
+  .hamburger-box.active .line-1 {
+    position: absolute;
+    transform: rotate(45deg);
+    top: 17.5px;
+    left: 8px;
+    width: 60%;
+  } 
+  
+  .hamburger-box.active .line-2 {
+    opacity: 0;
+  } 
+  
+  .hamburger-box.active .line-3 {
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 17.5px;
+    left: 8px;
+    width: 60%;
+  }   
+
+}
+
+@keyframes navLinkFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
