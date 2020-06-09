@@ -4,7 +4,7 @@ var portfolioWrapper = document.getElementById('portfolioWrapper');
 var iconsDiv = document.getElementById('icons');
 
 // miliseconds delay
-var miliseconds = 1500;
+var miliseconds = 200;
 
 addIcons(4, miliseconds);
 
@@ -16,7 +16,6 @@ function addIcons(length, ms) {
     'fas fa-headset',
     'fas fa-dice-d6',
     'fas fa-dice-d20',
-    'far fa-heart',
     'fas fa-gavel',
     'fas fa-hat-wizard',
     'fas fa-dragon',
