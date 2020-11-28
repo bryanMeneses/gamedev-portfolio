@@ -4,10 +4,10 @@ var portfolioWrapper = document.getElementById('portfolioWrapper');
 var iconsDiv = document.getElementById('icons');
 var iconsEl = iconsDiv.querySelectorAll(".icon");
 
-// miliseconds delay
-var miliseconds = 3000;
+// Icons Interval Handle
+var iconsHandle;
 
-addIcons(4, miliseconds);
+addIcons(4, 750);
 
 // Add ghosts sequentially on loading screen
 function addIcons(length, ms) {
@@ -25,16 +25,16 @@ function addIcons(length, ms) {
 
   var rngIcon = icons[Math.floor(Math.random() * icons.length)];
 
-  for (var i = 0; i < length; i++) {
-    var delay = i * (ms / length);
-
-    setTimeout(function() {
-      var icon = document.createElement('i');
-      icon.setAttribute('class', 'icon ' + rngIcon);
-      iconsDiv.appendChild(icon);
-    }, delay);
-  }
-  var i = 1;
+  iconsHandle = setInterval(function() {
+    if (iconsDiv.children.length === length) {
+      iconsDiv.innerHTML = "";
+    }
+    createIcon(rngIcon);
+  }, ms);
 }
 
-// Remove loading screen after 2 seconds
+function createIcon(rngIcon) { 
+  var icon = document.createElement('i');
+  icon.setAttribute('class', 'icon ' + rngIcon);
+  iconsDiv.appendChild(icon);
+}

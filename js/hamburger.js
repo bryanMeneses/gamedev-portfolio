@@ -25,6 +25,7 @@ hamburger.addEventListener('click', function() {
 });
 
 window.addEventListener("load", function() {
+  clearInterval(iconsHandle);
   loadingScreen.classList.add("hidden");
   document.getElementById('portfolioWrapper').classList.remove("hidden");
   loadingScreen.remove();
