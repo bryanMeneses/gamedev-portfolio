@@ -7,7 +7,7 @@ var iconsEl = iconsDiv.querySelectorAll(".icon");
 // Icons Interval Handle
 var iconsHandle;
 
-addIcons(4, 750);
+addIcons(4, 600);
 
 // Add ghosts sequentially on loading screen
 function addIcons(length, ms) {
