@@ -1,0 +1,36 @@
+.about-me-content {
+  display: flex;
+  margin-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-me-content .text {
+  white-space: pre-line;
+  width: 55%;
+  line-height: 20px;
+  margin: 0 auto;
+}
+
+.about-me-content .img {
+  width: 40%;
+}
+
+.about-me-content .img img {
+  width: 100%;
+}
+
+@media only screen and (max-width : 768px) {
+  .about-me-content {
+    flex-direction: column;
+  }
+  .about-me-content .text {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .about-me-content .img {
+    width: 75%;
+  }
+}

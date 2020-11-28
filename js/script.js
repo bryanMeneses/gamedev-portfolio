@@ -2,9 +2,10 @@
 var loadingScreen = document.getElementById('loadingScreen');
 var portfolioWrapper = document.getElementById('portfolioWrapper');
 var iconsDiv = document.getElementById('icons');
+var iconsEl = iconsDiv.querySelectorAll(".icon");
 
 // miliseconds delay
-var miliseconds = 1500;
+var miliseconds = 3000;
 
 addIcons(4, miliseconds);
 
@@ -33,10 +34,7 @@ function addIcons(length, ms) {
       iconsDiv.appendChild(icon);
     }, delay);
   }
+  var i = 1;
 }
 
 // Remove loading screen after 2 seconds
-setTimeout(() => {
-  loadingScreen.classList.add('hidden');
-  portfolioWrapper.classList.remove('hidden');
-}, miliseconds);

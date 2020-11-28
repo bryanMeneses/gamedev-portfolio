@@ -1,6 +1,7 @@
 /*  Navbar styles */
 .navbar-wrapper {
-  background-color: var(--dark-color);
+  background-color: #183549;
+  /* background-color: var(--dark-color); */
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -18,7 +19,7 @@
   margin-right: auto;
   letter-spacing: 1.5px;
   cursor: pointer;
-  padding: 20px;
+  padding: 16px;
   padding-left: 0;
 }
 
@@ -44,12 +45,8 @@
 }
 
 .link-item:hover {
-  background-color: #0c2d4b;
+  background-color: var(--dark-color);
 
-}
-
-.link-item:hover h2 {
-  color: var(--secondary-color) !important;
 }
 
 .hamburger-box {
@@ -101,8 +98,8 @@
     position: absolute;
     visibility: hidden;
     transform: translateX(100%);
-    background-color: var(--dark-color);
-    top: 77px;
+    background-color: #183549;
+    top: 71px;
     right: 0;
     width: 100%;
     list-style: none;
@@ -110,7 +107,7 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    transition: all var(--fast-speed) ease-in-out;
+    transition: all var(--med-speed) ease-in-out;
   }
 
   .nav-links-mobile .link-item {

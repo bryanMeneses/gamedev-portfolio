@@ -23,3 +23,9 @@ hamburger.addEventListener('click', function() {
   linksDiv.classList.toggle('nav-active');
   hamburger.classList.toggle('active');
 });
+
+window.addEventListener("load", function() {
+  loadingScreen.classList.add("hidden");
+  document.getElementById('portfolioWrapper').classList.remove("hidden");
+  loadingScreen.remove();
+});

@@ -6,16 +6,22 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
   <link rel="stylesheet" href="css/loading-screen.css" type="text/css" />
   <link rel="stylesheet" href="css/menu.css" type="text/css" />
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+  <link rel="stylesheet" href="css/about-me.css" type="text/css" />
+  <link rel="stylesheet" href="css/contact-form.css" type="text/css" />
   <script src="https://kit.fontawesome.com/b06fd2064d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap" rel="stylesheet" />
   <title>Kristian Bakov</title>
 </head>
 <body>
 
   <div class="loading-screen" id='loadingScreen'>
     <h2 class='loading-text'>Loading...</h2>
-    <div class="icons" id='icons'>
+    <div class="loading-icons" id='icons'>
     </div>
   </div>
+
+  <script src="js/script.js"></script>
 
   <div class="portfolio-wrapper hidden" id="portfolioWrapper">
     <div class="navbar-wrapper">
@@ -41,19 +47,30 @@
   
     <div class="main-wrapper">
       <video autoplay="" muted="" loop="" playsinline>
-        <source src="assets/videos/PillarLoop-2.mp4" type="video/mp4">
+        <source src="assets/videos/pillarloop.mp4" type="video/mp4">
       </video>
       <div class="container main-hero">
         <h1 class="common-h1">Hello, I am <span style="color: var(--secondary-color)">Kristian</span></h1>
         <h3 class="common-h3">a game developer</h3>
         <p>I love making games.<br /><br />My favourite languages are C++ and C# which I use to create games in Unity, Unreal Engine 4, DirectX 11 and OpenGL.</p>
         <a class="learn-more" href="">LEARN MORE</a>
+        <div class="icons">
+          <a target="blank" href="https://www.linkedin.com/in/kristian-alekzandar-bakov/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a target="blank" href="https://github.com/KristianBakov">
+            <i class="fab fa-github"></i>
+          </a>          
+          <a href='mailto: kristian.bakov@yahoo.com'>
+            <i class="fas fa-envelope"></i>
+          </a>          
+        </div>
       </div>
     </div>
 
     <div class="projects-wrapper">
       <div class="container projects-main">
-        <h2 class="common-h2">PROJECTS</h2>
+        <h2 class="common-h2">My Recent Projects</h2>
         <div class="projects">
 
           <div class="project-item">
@@ -63,7 +80,7 @@
               <h2>C++, Unity / C#</h2>
             </div>
             <div class="cta">
-              <a href="">LEARN MORE</a>
+              <a href="/projects/smoothed-particle-hydrodynamics.html">LEARN MORE</a>
             </div>
           </div>
 
@@ -74,18 +91,18 @@
               <h2>Python, Tensorflow</h2>
             </div>
             <div class="cta">
-              <a href="">LEARN MORE</a>
+              <a href="/projects/texture-generation.html">LEARN MORE</a>
             </div>
           </div>
 
           <div class="project-item">
             <img src="assets/images/ATPlatforer_mMIOAxZ3xO.png" alt="" />
             <div class="text">
-              <h1>3D Platformer</h1>
-              <h2>DirectX 11</h2>
+              <h1>3D Platformer in DirectX 11</h1>
+              <h2>C++</h2>
             </div>
             <div class="cta">
-              <a href="">LEARN MORE</a>
+              <a href="/projects/3d-platformer.html">LEARN MORE</a>
             </div>
           </div>
 
@@ -93,10 +110,10 @@
             <img class="no-cover" src="assets/images/Overwolf_D3LdCwNx5o-2.png" alt="" />
             <div class="text">
               <h1>Space Shooter Game</h1>
-              <h2>Unity</h2>
+              <h2>Unity, Android C#</h2>
             </div>
             <div class="cta">
-              <a href="">LEARN MORE</a>
+              <a href="/projects/space-shooter.html">LEARN MORE</a>
             </div>
           </div>
 
@@ -129,11 +146,49 @@
     <div class="about-me-wrapper">
       <div class="container about-me-main">
         <h2 class="common-h2">About Me</h2>
+        <div class="about-me-content">
+          <div class="text">I am a 2020 BSc(Hons)Games Technology graduate from UWE Bristol with a higher 2:1 degree.
+
+            I love making games.
+
+            My favourite languages are C++ and C# which I use to create games in Unity, Unreal Engine 4, DirectX 11 and OpenGL.
+
+            Additionally, I create my own assets using Maya and Blender for 3D modelling, Substance Suite(Designer and Painter) for making materials, Zbrush for sculpting and Photoshop.
+
+            Please feel free to contact me if you have questions regarding my projects or want to get in touch.</div>
+          <div class="img">
+            <img src="assets/images/portrait.jpg" alt="Portrait of Kristian" />
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="contact-form-wrapper">
+      <div class="container contact-form-main">
+        <h2 class="common-h2">Contact Me</h2>
+        <div class="form-container">
+          <form action="" id="contactForm">
+            <div class="form-control">
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="form-control">
+              <input type="email" placeholder="Email Address" />
+            </div>
+            <div class="form-control">
+              <input type="number" placeholder="Phone Number">
+            </div>
+            <div class="form-control">
+              <textarea name="" id="" placeholder="Message"></textarea>
+            </div>
+            <button>Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
   </div>
-  
-  <script src="js/script.js"></script>
+
   <script src="js/hamburger.js"></script>
+  <script src="js/contact-form.js"></script>
 </body>
 </html>

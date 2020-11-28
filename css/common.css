@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #10375c;
+  --secondary-color: #FC6012;
+  --info-color: #127681;
+  --dark-color: #0D1E29;
+  --white-color: #fff;
+  --transition-speed: 400ms;
+  --fast-speed: 175ms;
+  --top-padding: 32px;
+  --med-speed: 275ms;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Muli', sans-serif;
+  color: var(--white-color);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h1.common-h1 {
+  font-size: 64px;
+}
+
+h2.common-h2 {
+  font-size: 48px;
+}
+
+h3.common-h3 {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .container {
+    width: 720px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .container {
+    width: 560px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
